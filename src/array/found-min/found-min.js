@@ -12,6 +12,21 @@ You can't use the function Math.min()
 
 */
 
-// TODO add your code here
+const min = (tab) => {
+
+    if (!tab && tab.length === 0) return null;
+
+    let min = tab[0];
+
+    for(let i = 1; i < tab.length; i++){
+        if(min > tab[i]){
+            min = tab[i];
+        }
+    }
+
+    return min;
+
+};
+
 
 module.exports = min;
